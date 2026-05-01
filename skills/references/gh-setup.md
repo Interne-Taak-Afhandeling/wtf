@@ -184,3 +184,25 @@ gh repo view --json nameWithOwner -q .nameWithOwner
 ```
 
 Store the result as `<owner>/<repo>` for use in all subsequent extension calls in this session.
+
+## 6. Sync issue templates
+
+Before using any issue templates, check if the project's `.github/ISSUE_TEMPLATE/` files are up to date with the remote.
+
+```bash
+git fetch origin 2>/dev/null || true
+```
+
+Then check if any template files have changed upstream:
+
+```bash
+git diff --name-only HEAD origin/$(git branch --show-current) -- .github/ISSUE_TEMPLATE/
+```
+
+If the output is non-empty and the working tree is clean (`git status --porcelain` returns nothing), pull the updated templates:
+
+```bash
+git checkout origin/$(git branch --show-current) -- .github/ISSUE_TEMPLATE/
+```
+
+Skip this step entirely if the working tree has uncommitted changes — do not disrupt in-progress work.
