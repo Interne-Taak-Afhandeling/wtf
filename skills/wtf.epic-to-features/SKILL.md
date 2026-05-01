@@ -7,6 +7,11 @@ description: This skill should be used when a user wants to decompose an Epic in
 
 Break an Epic down into its full set of Features and create them one by one. Core value: proposes the complete feature list upfront, then walks through writing each Feature with full user control.
 
+## Language
+
+Write all GitHub issue content in Dutch (Nederlands): titles, body sections, user stories, acceptance criteria, success metrics, risks, and all human-readable prose.
+Gherkin keywords (Feature, Scenario, Given, When, Then), code snippets, domain event names (e.g. `OrderPlaced`), and technical identifiers remain in English.
+
 ## Process
 
 ### 0. GitHub CLI setup
