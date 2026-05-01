@@ -7,6 +7,10 @@ description: This skill should be used when a user wants to plan and create the 
 
 Break a Feature down into its full set of Tasks and create them one by one. Core value: proposes the complete task list upfront derived from the Feature's Acceptance Criteria, then walks through writing each Task with full user control.
 
+## Language
+
+Write all GitHub issue content in English. Gherkin scenarios, code, and technical identifiers are in English.
+
 ## Process
 
 ### 0. GitHub CLI setup
