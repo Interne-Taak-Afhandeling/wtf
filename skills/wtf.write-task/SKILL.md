@@ -7,6 +7,10 @@ description: This skill should be used when a user wants to create a task, write
 
 Create a GitHub Task issue — the implementable unit of work. Core value: derives Gherkin scenarios directly from the parent Feature's Acceptance Criteria, so nothing gets lost in translation.
 
+## Language
+
+Write all GitHub issue content in English. Gherkin scenarios, code, and technical identifiers are in English.
+
 ## Process
 
 ### 0. GitHub CLI setup
