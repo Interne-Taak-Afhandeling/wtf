@@ -9,6 +9,10 @@ Pick up an existing Task as a QA engineer. Core value: uses the Gherkin scenario
 
 Read `references/qa-verdict-guide.md` before starting — it defines the status symbols, verdict options, and the expected Test Mapping table format used throughout this skill.
 
+## Language
+
+Write all GitHub issue content in English. Gherkin scenarios, code, and technical identifiers are in English.
+
 ## Process
 
 ### 0. GitHub CLI setup
