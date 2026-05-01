@@ -10,7 +10,7 @@ assignees: ""
 
 ## Stakeholders
 
-<!-- Who is involved and accountable -->
+<!-- Wie is betrokken en eindverantwoordelijk -->
 
 - Product Owner:
 - Lead Designer:
@@ -18,42 +18,42 @@ assignees: ""
 
 ---
 
-## Bounded Context
+## Afgebakende context
 
-## <!-- Which domain context(s) does this initiative live in? If it spans multiple contexts, name each and describe the seam. -->
+## <!-- In welke domeincontext(en) speelt dit initiatief zich af? Als het meerdere contexten omvat, noem ze elk en beschrijf de grens. -->
 
 ---
 
 ## Context
 
-<!-- Why does this exist? What problem does it solve? Use domain language — no tech jargon. -->
+<!-- Waarom bestaat dit? Welk probleem lost het op? Gebruik domeintaal — geen technisch jargon. -->
 
-## Goal
+## Doel
 
-<!-- What outcome are we driving toward? Be specific enough to know when we're done. -->
+<!-- Welk resultaat streven we na? Wees specifiek genoeg om te weten wanneer we klaar zijn. -->
 
-## Success Metrics
+## Succesindicatoren
 
-<!-- How do we measure that we've achieved the goal? -->
+<!-- Hoe meten we dat we het doel hebben bereikt? -->
 
 - [ ]
 
 ---
 
-## Design Artifacts
+## Ontwerpartefacten
 
-## <!-- Link Figma files, prototypes, or research documents -->
+## <!-- Link Figma-bestanden, prototypes of onderzoeksdocumenten -->
 
-## Out of Scope
+## Buiten scope
 
-## <!-- Explicitly list what this epic does NOT cover -->
+## <!-- Benoem expliciet wat dit epic NIET omvat -->
 
-## Risks
+## Risico's
 
 - ***
 
-## Feature Breakdown
+## Feature-overzicht
 
-<!-- Child features — link issues as they are created -->
+<!-- Onderliggende features — koppel issues zodra ze zijn aangemaakt -->
 
 - [ ]
