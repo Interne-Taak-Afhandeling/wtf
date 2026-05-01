@@ -8,58 +8,58 @@ assignees: ""
 
 # 🚀 Feature: {{title}}
 
-## Bounded Context
+## Afgebakende context
 
 ---
 
-## User Stories
+## Gebruikersverhalen
 
-<!-- Written by Product Owner -->
+<!-- Geschreven door de Product Owner -->
 
-- As a **_, I want _** so that \_\_\_
+- Als een **_, wil ik _** zodat \_\_\_
 
-## Design Handoff
+## Ontwerpoverdracht
 
-<!-- Link Figma frames, component specs, or annotated mockups -->
+<!-- Link Figma-frames, componentspecificaties of geannoteerde mockups -->
 
 - Figma:
-- States covered: (default / loading / error / empty)
-- Accessibility notes:
+- Afgedekte toestanden: (standaard / laden / fout / leeg)
+- Toegankelijkheidsnotities:
 
 ---
 
-## Acceptance Criteria
+## Acceptatiecriteria
 
-<!-- These directly feed into Gherkin scenarios in child Tasks. One AC → one or more scenarios. -->
+<!-- Deze worden rechtstreeks omgezet naar Gherkin-scenario's in onderliggende taken. Één AC → één of meer scenario's. -->
 
 - [ ]
 
-## Edge Cases
+## Randgevallen
 
-## <!-- Explicitly name them here so Tasks can cover them in Gherkin. Use domain language. -->
+## <!-- Benoem ze hier expliciet zodat taken ze kunnen dekken in Gherkin. Gebruik domeintaal. -->
 
-## Domain Events
+## Domeingebeurtenissen
 
-<!-- Events this feature emits or consumes. Use past-tense domain names (e.g. OrderPlaced, PaymentSettled). -->
+<!-- Gebeurtenissen die deze feature uitzendt of verwerkt. Gebruik verleden-tijdsnamen (bijv. OrderGeplaatst, BetalingAfgewikkeld). -->
 
-- Emits:
-- Consumes:
-
----
-
-## Definition of Ready
-
-<!-- This feature is ready to be broken into Tasks when: -->
-
-- [ ] User stories agreed by PO
-- [ ] Design handoff complete
-- [ ] Acceptance criteria written and reviewed
-- [ ] Edge cases identified
+- Zendt uit:
+- Verwerkt:
 
 ---
 
-## Proposed Tasks
+## Gereedheidscriterium
 
-<!-- Link task issues as they are created -->
+<!-- Deze feature is klaar om in taken te worden opgesplitst wanneer: -->
+
+- [ ] Gebruikersverhalen goedgekeurd door PO
+- [ ] Ontwerpoverdracht afgerond
+- [ ] Acceptatiecriteria geschreven en beoordeeld
+- [ ] Randgevallen geïdentificeerd
+
+---
+
+## Voorgestelde taken
+
+<!-- Koppel taakaanvragen zodra ze zijn aangemaakt -->
 
 - [ ]
