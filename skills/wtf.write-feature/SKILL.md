@@ -7,6 +7,11 @@ description: This skill should be used when a user wants to create a GitHub Feat
 
 Create a GitHub Feature issue defining a user-facing capability. Fetches the parent Epic for context so the user doesn't have to repeat it.
 
+## Language
+
+Write all GitHub issue content in Dutch (Nederlands): titles, body sections, user stories, acceptance criteria, success metrics, risks, and all human-readable prose.
+Gherkin keywords (Feature, Scenario, Given, When, Then), code snippets, domain event names (e.g. `OrderPlaced`), and technical identifiers remain in English.
+
 ## Process
 
 ### 0. GitHub CLI setup
