@@ -35,7 +35,26 @@ Replace every `[PLACEHOLDER]` (or any section the template treats as fillable) w
 
 ## 5. Write to a temp file, then create
 
-Multi-line bodies must go through a temp file to avoid shell quoting issues:
+Multi-line bodies must go through a temp file to avoid shell quoting issues. The file **must** be written as UTF-8 without BOM.
+
+**On Windows (PowerShell):**
+
+```powershell
+$Body = "..." # filled template content
+$tempFile = [System.IO.Path]::GetTempFileName() -replace '\.tmp$', '.md'
+[System.IO.File]::WriteAllText($tempFile, $Body, [System.Text.UTF8Encoding]::new($false))
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+# Issue creation:
+gh issue create --title "<emoji> <Type>: <title>" --body-file $tempFile --label "<label>"
+
+# PR creation:
+gh pr create --title "<title>" --body-file $tempFile --base "<base_branch>"
+
+Remove-Item $tempFile
+```
+
+**On Linux/macOS (bash):**
 
 ```bash
 BODY=/tmp/wtf.<skill-slug>-$(date +%s)-body.md
@@ -47,5 +66,7 @@ gh issue create --title "<emoji> <Type>: <title>" --body-file "$BODY" --label "<
 # PR creation:
 gh pr create --title "<title>" --body-file "$BODY" --base "<base_branch>"
 ```
+
+Never pass issue/PR bodies as inline `--body` arguments — always use `--body-file`. On Windows this prevents CP850/CP1252 ↔ UTF-8 mojibake; on all platforms it avoids shell quoting issues with multi-line content.
 
 The exact title prefix (`🎯 Epic:`, `🚀 Feature:`, `🛠 Task:`, `🐞 Bug:`) and label name are skill-specific — see each skill's create step. The Read → Write-temp → `--body-file` pattern is universal.
