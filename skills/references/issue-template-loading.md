@@ -29,11 +29,24 @@ Both branches halt the current skill. Do not fall back to drafting without the t
 
 Use only the markdown body **below the second `---` delimiter**. Ignore the YAML frontmatter at the top — it is GitHub issue-form metadata, not part of the body the user sees in the rendered issue.
 
-## 4. Fill placeholders
+## 4. Detect template language
 
-Replace every `[PLACEHOLDER]` (or any section the template treats as fillable) with the gathered context. Preserve every section heading and structural element exactly — downstream skills parse these by name.
+Inspect the template body read in step 3 — specifically the HTML comments, placeholder text, and any prose beneath the `##` headings. Determine the natural language used (e.g. English, Dutch, German).
 
-## 5. Write to a temp file, then create
+All generated content — titles, body prose, user stories, acceptance criteria, risks, success metrics, and any other human-readable text — **must** be written in the same language as the template. This includes the issue title (after the emoji prefix).
+
+The following always remain in English regardless of template language:
+- `##` section headings (these are the parsing contract for downstream skills)
+- Gherkin keywords (`Feature`, `Scenario`, `Given`, `When`, `Then`)
+- Code snippets and technical identifiers
+- Domain event names (e.g. `OrderPlaced`, `PaymentSettled`)
+- Label names
+
+## 5. Fill placeholders
+
+Replace every `[PLACEHOLDER]` (or any section the template treats as fillable) with the gathered context. Preserve every section heading and structural element exactly — downstream skills parse these by name. Write all filled content in the language detected in step 4.
+
+## 6. Write to a temp file, then create
 
 Multi-line bodies must go through a temp file to avoid shell quoting issues:
 
